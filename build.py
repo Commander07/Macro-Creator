@@ -2,7 +2,7 @@ from cx_Freeze import setup, Executable
 
 base = None    
 
-executables = [Executable("output.py", base=base)]
+executables = [Executable("main.py", base=base)]
 
 packages = ["idna","time","ahk"]
 options = {
@@ -15,6 +15,6 @@ setup(
     name = "Macro",
     options = options,
     version = "1.0",
-    description = 'User created macro',
+    description = 'A User created macro',
     executables = executables
 )
